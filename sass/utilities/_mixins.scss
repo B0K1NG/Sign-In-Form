@@ -1,0 +1,32 @@
+@mixin flexy($display: flex) {
+    display: $display;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rowy($display: flex) {
+    display: $display;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 1rem;
+    padding-left: 0.4rem;
+    height: 1.8rem;
+}
+
+@mixin size($width: 2.4em, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin btn ($color: #2148C0, $background-color: #FFFFFF, $font-size: 1rem) {
+    color: $color;
+    background-color: $background-color;
+    font-size: $font-size;
+}
+
+@mixin border($border: 1px solid #FFFFFF, $border-radius: 3px) {
+    border: $border;
+    border-radius: $border-radius;
+}

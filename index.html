@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="./sass/style.css">
-    <link rel="stylesheet" href="./sass/mediaquerries.css">
 </head>
 <body>
-    <div class="login">
-        <img src="./assets/icons/cart.png" alt="cart-image" class="logo">
+    <section class="login-form">
+        <img src="./assets/icons/cart.png" alt="cart-image" class="login-form__logo">
         
-        <div class="credentials">
-            <div class="user">
-                <img src="./assets/icons/person.png" alt="user">
+        
+            <div class="login-form__user">
+                <img src="./assets/icons/person.png" alt="user" class="login-form__user-icon">
                 <input type="text" placeholder="Username" id="username" name="username" required>
             </div>
             
-            <div class="password">
-                <img src="./assets/icons/lock.png" alt="password">
+            <div class="login-form__password">
+                <img src="./assets/icons/lock.png" alt="password" class="login-form__password-icon">
                 <input type="password" placeholder="Password" id="password" name="password" required>
             </div>
-        </div>
+        
 
-        <button class="login-btn">
-            <h2>Login</h2>
+        <button class="login-form__button">
+            Login
         </button>
 
-        <p>Forgot password?</p>
-    </div>
+        <p class="login-form__forgot">Forgot password?</p>
+    </section>
 </body>
 </html>
 

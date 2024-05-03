@@ -1,0 +1,11 @@
+@import '../utilities/variables';
+
+body {
+  background-image: url('/assets/icons/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: $font-stack;
+  color: $primary-color;
+}

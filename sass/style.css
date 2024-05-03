@@ -1,0 +1,126 @@
+body {
+  background-image: url("/assets/icons/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Verdana, sans-serif;
+  color: #ffffff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.login-form__user, .login-form__password, .login-form__button, .login-form input[type=text], .login-form input[type=password] {
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+}
+.login-form__logo {
+  width: 9em;
+  height: auto;
+}
+.login-form__user, .login-form__password {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.4rem;
+  height: 1.8rem;
+  margin: 1rem;
+  font-size: 0.6rem;
+}
+.login-form__user-icon, .login-form__password-icon {
+  width: 3em;
+  height: 2.4em;
+}
+.login-form__button {
+  width: 13em;
+  height: 2.2em;
+  color: #2148C0;
+  background-color: #FFFFFF;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.login-form__forgot {
+  cursor: pointer;
+}
+.login-form input[type=text],
+.login-form input[type=password] {
+  background: transparent;
+  border: none;
+  border-radius: 9px;
+  outline: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 640px) {
+  .login-form__logo {
+    width: 11em;
+    height: auto;
+  }
+  .login-form__user, .login-form__password {
+    width: 20em;
+    height: 2rem;
+  }
+  .login-form__button {
+    width: 13em;
+    height: 2.2em;
+  }
+  .login-form__forgot {
+    padding-left: 4rem;
+  }
+  .login-form__input {
+    width: 20em;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .login-form__logo {
+    width: 13em;
+    height: auto;
+  }
+  .login-form__user, .login-form__password {
+    width: 20em;
+    height: 2rem;
+  }
+  .login-form__button {
+    width: 13em;
+    height: 2.2em;
+  }
+  .login-form__forgot {
+    padding-left: 5rem;
+  }
+  .login-form__input {
+    width: 22em;
+  }
+}
+@media (min-width: 1280px) {
+  .login-form__logo {
+    width: 13em;
+    height: auto;
+  }
+  .login-form__user, .login-form__password {
+    width: 32em;
+    height: 2.5rem;
+  }
+  .login-form__button {
+    width: 20em;
+    height: 3em;
+  }
+  .login-form__forgot {
+    padding-left: 11rem;
+  }
+  .login-form__input {
+    width: 22em;
+  }
+}

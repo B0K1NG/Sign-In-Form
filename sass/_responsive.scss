@@ -1,0 +1,79 @@
+@import '../utilities/variables';
+
+/* MEDIA QUERIES */
+
+@media (min-width: $small-screen) {
+    .login-form__logo {
+        @include size($width: 11em);
+    }
+
+    .login-form {
+        &__user,
+        &__password {
+            @include size($width: 20em, $height: 2rem);
+        }
+    }
+
+    .login-form__button {
+        @include size($width: 13em, $height: 2.2em);
+    }
+
+    .login-form__forgot {
+        padding-left: 4rem;
+    }
+
+    .login-form__input {
+        @include size($width: 20em);
+    }
+}
+
+@media (min-width: $medium-screen) {
+    .login-form__logo {
+        @include size($width: 13em);
+    }
+
+    .login-form {
+        &__user,
+        &__password {
+            @include size($width: 20em, $height: 2rem);
+        }
+    }
+
+    .login-form__button {
+        @include size($width: 13em, $height: 2.2em);
+    }
+
+    .login-form__forgot {
+        padding-left: 5rem;
+    }
+
+    .login-form__input {
+        width: 22em;
+    }
+}
+
+@media (min-width: $large-screen) {
+    .login-form__logo {
+        @include size($width: 13em);
+    }
+
+    .login-form {
+        &__user,
+        &__password {
+            @include size($width: 32em, $height: 2.5rem);
+        }
+    }
+
+    .login-form__button {
+        @include size($width: 20em, $height: 3em);
+        
+    }
+
+    .login-form__forgot {
+        padding-left: 11rem;
+    }
+
+    .login-form__input {
+        width: 22em;
+    }
+}

@@ -1,0 +1,48 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.login-form {
+    @include flexy;
+    margin-top: 10rem;
+
+    &__user, &__password, &__button, input[type="text"], input[type="password"] {
+        @include border;
+    }
+
+    &__logo {
+        @include size($width: 9em);
+    }
+
+    &__user, &__password {
+        @include rowy;
+        margin: 1rem;
+        font-size: $font-size;
+    }
+
+    &__user-icon, &__password-icon {
+        @include size($width: 3em, $height: 2.4em);
+    }
+
+    &__button {
+        @include size($width: 13em, $height: 2.2em);
+        @include btn;
+        margin-top: $margin-top;
+        font-weight: 600;
+        text-transform: $text-transform;
+        cursor: pointer;
+    }
+
+    &__forgot {
+        cursor: pointer;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        background: transparent; 
+        border: none;
+        border-radius: 9px;
+        outline: none; 
+        color: $primary-color;
+        text-transform: $text-transform;
+    }
+}
